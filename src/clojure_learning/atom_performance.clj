@@ -1,32 +1,35 @@
 (ns clojure-learning.atom-performance)
 
-(def a (atom 0))
-(def r (ref 0))
-(def n 100000)
-(def chunk-count 10)
+(defn ref-watcher
+  [every key ref old new]
+  (if (zero? (mod new every))
+    (prn (str (.getId (Thread/currentThread)) " " key ": the ref changed from " old " to " new "."))))
 
-;(add-watch a :print-watcher
-;  (fn [key ref old new]
-;    (if (zero? (mod new (/ n 10)))
-;      (prn (str (.getId (Thread/currentThread)) " " key ": the atom 'a' changed from " old " to " new ".")))))
+(defn parallel-repeat
+  [f threads repeats]
+  (->>
+    (range threads)
+    (map (fn [_] #(future
+                    (dotimes [i repeats]
+                      (f i)))))
+    (doall)))
 
 (defn perform
-  [ref f]
-  (let [futures
-      (->>
-        (range n)
-        (partition-all (/ n chunk-count))
-        (map #(future (dotimes [_ (count %)]
-                        (f ref))))
-        (doall))]
-    (time
-      (doall
-        (reduce #(deref %2) futures)))))
+  [f threads repeats]
+  (let [futures (parallel-repeat f threads repeats)]
+    (doseq [ft futures] @(ft))))
 
-(let [datas [["atom"        a #(swap! % inc)]
-             ["ref-set"     r #(dosync (ref-set % 0))]
-             ["commute ref" r #(dosync (commute % inc))]
-             ["alter ref"   r #(dosync (alter % inc))]]]
-  (doseq [[msg ref f] datas]
-     (println msg)
-     (perform ref f)))
+(let [a (atom 0)
+      r (ref 0)
+      threads 10
+      repeats 1000
+      watcher (partial ref-watcher (/ repeats 10))
+      datas [["atom"        #(swap! a (fn [_] %))]
+             ["ref-set"     #(dosync (ref-set r %))]
+             ["commute ref" #(dosync (commute r (fn [_] %)))]
+             ["alter ref"   #(dosync (alter r (fn [_] %)))]]]
+  (add-watch a :logger watcher)
+  (add-watch r :logger watcher)
+  (doseq [[msg f] datas]
+     (prn msg)
+     (time (perform f threads repeats))))

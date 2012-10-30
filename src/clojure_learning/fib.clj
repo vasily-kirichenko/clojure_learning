@@ -1,17 +1,18 @@
 (ns clojure-learning.fib)
 
-(defn ^:dynamic fib
+(defn fib
+  "Calculate Fibonacci sequence using very slow straitforward algorithm."
   [n]
   (if (< n 2)
     1
     (+ (fib (- n 1)) (fib (- n 2)))))
 
-(defn ffib
+(defn fast-fib
+  "Calculate Fibonacci sequence using optimized algorithm."
   ([n]
-    (case n
-      0 1
-      1 1
-      (ffib 1 1 n 2)))
+    (if (< n 2)
+      1
+      (fast-fib 1 1 n 2)))
 
   ([n-2 n-1 n pos]
     (if (>= pos n)

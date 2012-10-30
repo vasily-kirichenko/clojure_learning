@@ -1,10 +1,8 @@
-(ns clojure-learning.fib_test
+(ns clojure-learning.fib-test
   (:use clojure.test
         clojure-learning.fib))
 
 (deftest compare-to-old
   (dotimes [n 20]
-    (is (= (fib n) (ffib n)) n)))
-
-(run-tests)
+    (is (= (fib n) (fast-fib n)) n)))
 
