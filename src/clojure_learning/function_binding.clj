@@ -1,4 +1,4 @@
-(ns function-binding
+(ns clojure-learning.function-binding
   (:use fib))
 
 (def fib-10

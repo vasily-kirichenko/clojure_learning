@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd7dfece-0a21-4372-a4cc-07774d683c44" name="Default" comment="link project with git">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/split.clj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/runner.clj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/split_test.clj" />
+    <list default="true" id="bd7dfece-0a21-4372-a4cc-07774d683c44" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/clojure_learning/atom_performance.clj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/clojure_learning/fib_test.clj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/clojure_learning/runner_test.clj" />
+      <change type="DELETED" beforePath="D:\git\clojure_learning\src\atom_performance.clj" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\clojure_learning\src\split.clj" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\clojure_learning\test\runner.clj" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\clojure_learning\test\split_test.clj" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clojure_learning.iml" afterPath="$PROJECT_DIR$/clojure_learning.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clojure_learning.ipr" afterPath="$PROJECT_DIR$/clojure_learning.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clojure_learning.iws" afterPath="$PROJECT_DIR$/clojure_learning.iws" />
+      <change type="MOVED" beforePath="D:\git\clojure_learning\src\fib.clj" afterPath="$PROJECT_DIR$/src/clojure_learning/fib.clj" />
+      <change type="MOVED" beforePath="D:\git\clojure_learning\src\function_binding.clj" afterPath="$PROJECT_DIR$/src/clojure_learning/function_binding.clj" />
     </list>
     <ignored path="clojure_learning.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,45 +72,45 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="fib.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fib.clj">
+        <entry file="file://$PROJECT_DIR$/src/clojure_learning/fib.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="28" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0">
+            <state line="33" column="0" selection-start="713" selection-end="713" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fib_test.clj" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/clojure_learning/fib_test.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="23" selection-start="106" selection-end="106" vertical-scroll-proportion="0.14141414">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="runner_test.clj" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/clojure_learning/runner_test.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="28" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="function_binding.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/function_binding.clj">
+        <entry file="file://$PROJECT_DIR$/src/clojure_learning/function_binding.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="11" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0">
+            <state line="1" column="13" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="atom_performance.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/atom_performance.clj">
+        <entry file="file://$PROJECT_DIR$/src/clojure_learning/atom_performance.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="17" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="split.clj" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/split.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="48" selection-start="113" selection-end="113" vertical-scroll-proportion="0.15384616">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="split_test.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/split_test.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="26" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0">
+            <state line="2" column="16" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -124,11 +131,18 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/function_binding.clj" />
-        <option value="$PROJECT_DIR$/src/fib.clj" />
-        <option value="$PROJECT_DIR$/src/atom_performance.clj" />
         <option value="$PROJECT_DIR$/test/runner.clj" />
         <option value="$PROJECT_DIR$/src/split.clj" />
         <option value="$PROJECT_DIR$/test/split_test.clj" />
+        <option value="$PROJECT_DIR$/src/atom_performance.clj" />
+        <option value="$PROJECT_DIR$/src/fib.clj" />
+        <option value="$PROJECT_DIR$/test/fib.clj" />
+        <option value="$PROJECT_DIR$/src/clojure_learning/atom_performance.clj" />
+        <option value="$PROJECT_DIR$/src/clojure_learning/function_binding.clj" />
+        <option value="$PROJECT_DIR$/test/clojure_learning/fib.clj" />
+        <option value="$PROJECT_DIR$/test/clojure_learning/runner_test.clj" />
+        <option value="$PROJECT_DIR$/src/clojure_learning/fib.clj" />
+        <option value="$PROJECT_DIR$/test/clojure_learning/fib_test.clj" />
       </list>
     </option>
   </component>
@@ -136,10 +150,10 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="23" />
-    <option name="width" value="1938" />
-    <option name="height" value="1066" />
+    <option name="x" value="282" />
+    <option name="y" value="32" />
+    <option name="width" value="1298" />
+    <option name="height" value="1046" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -208,6 +222,10 @@
               <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clojure_learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -220,6 +238,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clojure_learning" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -275,7 +297,13 @@
     <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
   </component>
-  <component name="RunManager" selected="Clojure Script.split_test">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\git\clojure_learning\test\clojure_learning" />
+      <recent name="D:\git\clojure_learning\src\clojure_learning" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Clojure Script.fib_test">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -451,7 +479,7 @@
     </configuration>
     <configuration default="false" name="run all tests" type="ClojureScriptRunConfiguration" factoryName="Clojure Script">
       <module name="clojure_learning" />
-      <setting name="path" value="$PROJECT_DIR$/test/runner.clj" />
+      <setting name="path" value="D:\git\clojure_learning\test\clojure_learning\runner_test.clj" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
       <setting name="workDir" value="$PROJECT_DIR$/test" />
@@ -471,12 +499,24 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="5">
+    <configuration default="false" name="fib_test" type="ClojureScriptRunConfiguration" factoryName="Clojure Script">
+      <module name="clojure_learning" />
+      <setting name="path" value="$PROJECT_DIR$/test/clojure_learning/fib_test.clj" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="$PROJECT_DIR$/test/clojure_learning" />
+      <setting name="repl" value="false" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Clojure Script.fib" />
       <item index="1" class="java.lang.String" itemvalue="Clojure Script.function_binding" />
       <item index="2" class="java.lang.String" itemvalue="Clojure Script.atom_performance" />
       <item index="3" class="java.lang.String" itemvalue="Clojure Script.run all tests" />
       <item index="4" class="java.lang.String" itemvalue="Clojure Script.split_test" />
+      <item index="5" class="java.lang.String" itemvalue="Clojure Script.fib_test" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -494,18 +534,22 @@
       <created>1351515321427</created>
       <updated>1351515321427</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add split and a test (the test can't see the split func yet)">
+      <created>1351518774529</created>
+      <updated>1351518774529</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="23" width="1938" height="1066" extended-state="6" />
+    <frame x="282" y="32" width="1298" height="1046" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959402" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -517,8 +561,9 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18908532" sideWeight="0.21820304" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18803419" sideWeight="0.6395089" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36049107" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.293379" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18587662" sideWeight="0.7089041" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29109588" sideWeight="0.99916875" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -564,7 +609,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="link project with git" />
+    <option name="LAST_COMMIT_MESSAGE" value="add split and a test (the test can't see the split func yet)" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -578,6 +623,7 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="link project with git" />
+    <MESSAGE value="add split and a test (the test can't see the split func yet)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -592,43 +638,11 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/clojure-1.4.0/clojure-1.4.0.jar!/clojure/core.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2431" column="24" selection-start="76883" selection-end="76883" vertical-scroll-proportion="0.4871795" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/clojure-1.4.0/clojure-1.4.0.jar!/clojure/test.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="749" column="12" selection-start="24612" selection-end="24612" vertical-scroll-proportion="0.5641026" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fib.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="28" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/function_binding.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="11" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/runner.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="49" selection-end="49" vertical-scroll-proportion="0.048331417">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/clojure-1.4.0/src/clj/clojure/core.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/atom_performance.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="17" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/clojure-1.4.0/src/clj/clojure/test.clj">
@@ -638,16 +652,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/split_test.clj">
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_03/src.zip!/java/util/concurrent/FutureTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="26" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0">
+        <state line="251" column="0" selection-start="7958" selection-end="7958" vertical-scroll-proportion="0.3327674">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/split.clj">
+    <entry file="jar://$PROJECT_DIR$/clojure-1.4.0/clojure-1.4.0.jar!/clojure/core.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="48" selection-start="113" selection-end="113" vertical-scroll-proportion="0.15384616">
+        <state line="2715" column="6" selection-start="85152" selection-end="85152" vertical-scroll-proportion="-0.6098964">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clojure_learning/atom_performance.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="16" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clojure_learning/function_binding.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="13" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/clojure_learning/runner_test.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="28" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clojure_learning/fib.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="713" selection-end="713" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/clojure-1.4.0/clojure-1.4.0.jar!/clojure/test.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="537" column="10" selection-start="18036" selection-end="18036" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/clojure_learning/fib_test.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="23" selection-start="106" selection-end="106" vertical-scroll-proportion="0.14141414">
           <folding />
         </state>
       </provider>
