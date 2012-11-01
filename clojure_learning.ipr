@@ -155,6 +155,13 @@
       </item>
     </group>
   </component>
+  <component name="ProjectDictionaryState">
+    <dictionary name="kirichenko">
+      <words>
+        <w>multimethod</w>
+      </words>
+    </dictionary>
+  </component>
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/clojure_learning.iml" filepath="$PROJECT_DIR$/clojure_learning.iml" />
