@@ -159,6 +159,7 @@
     <dictionary name="kirichenko">
       <words>
         <w>multimethod</w>
+        <w>multimethods</w>
       </words>
     </dictionary>
   </component>

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd7dfece-0a21-4372-a4cc-07774d683c44" name="Default" comment="atom_performance.clj highly improved">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/clojure_learning/multimethods_vs_protocols.clj" />
+    <list default="true" id="bd7dfece-0a21-4372-a4cc-07774d683c44" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/clojure_learning/util.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clojure_learning.ipr" afterPath="$PROJECT_DIR$/clojure_learning.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clojure_learning.iws" afterPath="$PROJECT_DIR$/clojure_learning.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/clojure_learning/multimethods_vs_protocols.clj" afterPath="$PROJECT_DIR$/src/clojure_learning/multimethods_vs_protocols.clj" />
     </list>
     <ignored path="clojure_learning.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,7 +75,7 @@
       <file leaf-file-name="multimethods_vs_protocols.clj" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/clojure_learning/multimethods_vs_protocols.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="47" selection-start="244" selection-end="244" vertical-scroll-proportion="0.5329949">
+            <state line="38" column="34" selection-start="988" selection-end="988" vertical-scroll-proportion="0.4913495">
               <folding />
             </state>
           </provider>
@@ -108,6 +109,7 @@
         <option value="$PROJECT_DIR$/test/clojure_learning/runner.clj" />
         <option value="$PROJECT_DIR$/src/clojure_learning/fib.clj" />
         <option value="$PROJECT_DIR$/src/clojure_learning/atom_performance.clj" />
+        <option value="$PROJECT_DIR$/src/clojure_learning/util.clj" />
         <option value="$PROJECT_DIR$/src/clojure_learning/multimethods_vs_protocols.clj" />
       </list>
     </option>
@@ -524,12 +526,16 @@
       <created>1351606065775</created>
       <updated>1351606065775</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add multimethods vs protocols">
+      <created>1351765233532</created>
+      <updated>1351765233532</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="231" y="32" width="1444" height="1046" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -546,8 +552,8 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18908532" sideWeight="0.21820304" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18069667" sideWeight="0.70547944" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29452056" sideWeight="0.99926144" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18069667" sideWeight="0.69063926" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30936074" sideWeight="0.99926144" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -595,7 +601,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="atom_performance.clj highly improved" />
+    <option name="LAST_COMMIT_MESSAGE" value="add multimethods vs protocols" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -612,6 +618,7 @@
     <MESSAGE value="add split and a test (the test can't see the split func yet)" />
     <MESSAGE value="organize namespaces &#10;move fib test into separate package" />
     <MESSAGE value="atom_performance.clj highly improved" />
+    <MESSAGE value="add multimethods vs protocols" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -680,14 +687,21 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/clojure-1.4.0/clojure-1.4.0.jar!/clojure/core.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2798" column="10" selection-start="87684" selection-end="87684" vertical-scroll-proportion="0.33217993">
+        <state line="3428" column="81" selection-start="107565" selection-end="107565" vertical-scroll-proportion="0.40707964">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clojure_learning/util.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="10" selection-start="38" selection-end="38" vertical-scroll-proportion="0.07266436">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clojure_learning/multimethods_vs_protocols.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="47" selection-start="244" selection-end="244" vertical-scroll-proportion="0.5329949">
+        <state line="38" column="34" selection-start="988" selection-end="988" vertical-scroll-proportion="0.4913495">
           <folding />
         </state>
       </provider>

@@ -1,36 +1,49 @@
-(ns clojure-learning.multimethods-vs-protocols)
+(ns clojure-learning.multimethods-vs-protocols
+  (:use clojure-learning.util))
 
 (defrecord Order [price])
 
 ;; protocol
 
 (defprotocol Calculable
-  (ptotal [this]))
+  (p-total [this]))
 
 (extend-protocol Calculable
   Order
-  (ptotal [order] (:price order)))
+  (p-total [order] (:price order))
 
-;; multimethod
+  clojure.lang.IPersistentMap
+  (p-total [m] (:price m)))
 
-(defmulti mtotal class)
+;; multimethod that accesses the record as a map
 
-(defmethod mtotal Order [order]
-  (:price order))
+(defmulti m-map-total class)
+(defmethod m-map-total Order [order] (:price order))
+(defmethod m-map-total clojure.lang.IPersistentMap [m] (:price m))
+
+;; multimethod that accesses the record as a class
+
+(defmulti m-class-total class)
+(defmethod m-class-total Order [order] (.price order))
 
 ;; test
 
-(let [orders (reduce conj (for [n (range 20000000)] (Order. n)) ())]
-  (prn (format "created %s orders." (count orders)))
+(defn measure
+  [constructor type]
+  (let [orders (reduce conj (for [n (range 3000000)] (constructor n)) ())]
+    (prn (format "created %s %ss." (count orders) type))
 
-  (time
-    (doseq
-      [o orders]
-      (ptotal o)))
-  (prn "protocol done.")
+    (doseq [[f msg] [[:price "direct (map)"]
+                     [p-total "protocol"]
+                     [m-map-total "multimethod (map)"]
+                     [#(.price %) "direct (class)"]
+                     [m-class-total "multimethod (class)"]]]
+      (prn (format
+             "%s: %s msecs."
+             msg
+             (try
+               (tc (dorun (map f orders)))
+               (catch Exception ex (str ex))))))))
 
-  (time
-    (doseq
-      [o orders]
-      (mtotal o)))
-  (prn "multimethod done."))
+(measure #(Order. %) "order")
+(measure #(hash-map :price %) "map")
