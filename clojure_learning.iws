@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd7dfece-0a21-4372-a4cc-07774d683c44" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/clojure_learning/util.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clojure_learning.ipr" afterPath="$PROJECT_DIR$/clojure_learning.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clojure_learning.iws" afterPath="$PROJECT_DIR$/clojure_learning.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/clojure_learning/multimethods_vs_protocols.clj" afterPath="$PROJECT_DIR$/src/clojure_learning/multimethods_vs_protocols.clj" />
     </list>
@@ -75,7 +73,16 @@
       <file leaf-file-name="multimethods_vs_protocols.clj" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/clojure_learning/multimethods_vs_protocols.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="34" selection-start="988" selection-end="988" vertical-scroll-proportion="0.4913495">
+            <state line="43" column="32" selection-start="821" selection-end="821" vertical-scroll-proportion="0.52768165">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="util.clj" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/clojure_learning/util.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="23" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -159,20 +166,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clojure_learning" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clojure_learning" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -229,22 +222,36 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clojure_learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clojure_learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="255" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="266" />
     <property name="project.structure.proportion" value="0.0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="266" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="255" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="255" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="268" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1055" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1055" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1055" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="268" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="266" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -262,8 +269,8 @@
     <property name="options.lastSelected" value="org.jetbrains.plugins.clojure.settings.ClojureConfigurable" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -326,24 +333,6 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -370,6 +359,24 @@
       <envs />
       <properties />
       <listeners />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -490,12 +497,12 @@
       <method />
     </configuration>
     <list size="7">
-      <item index="0" class="java.lang.String" itemvalue="Clojure Script.fib" />
-      <item index="1" class="java.lang.String" itemvalue="Clojure Script.function_binding" />
-      <item index="2" class="java.lang.String" itemvalue="Clojure Script.run all tests" />
-      <item index="3" class="java.lang.String" itemvalue="Clojure Script.split_test" />
-      <item index="4" class="java.lang.String" itemvalue="Clojure Script.fib_test" />
-      <item index="5" class="java.lang.String" itemvalue="Clojure Script.atom_performance" />
+      <item index="0" class="java.lang.String" itemvalue="Clojure Script.atom_performance" />
+      <item index="1" class="java.lang.String" itemvalue="Clojure Script.fib" />
+      <item index="2" class="java.lang.String" itemvalue="Clojure Script.function_binding" />
+      <item index="3" class="java.lang.String" itemvalue="Clojure Script.run all tests" />
+      <item index="4" class="java.lang.String" itemvalue="Clojure Script.split_test" />
+      <item index="5" class="java.lang.String" itemvalue="Clojure Script.fib_test" />
       <item index="6" class="java.lang.String" itemvalue="Clojure Script.multimethods_vs_protocols" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -530,7 +537,11 @@
       <created>1351765233532</created>
       <updated>1351765233532</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="improve multimethods vs protocols">
+      <created>1351772856529</created>
+      <updated>1351772856529</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -553,7 +564,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18908532" sideWeight="0.21820304" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18069667" sideWeight="0.69063926" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30936074" sideWeight="0.99926144" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30936074" sideWeight="0.99926144" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -601,7 +612,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="add multimethods vs protocols" />
+    <option name="LAST_COMMIT_MESSAGE" value="improve multimethods vs protocols" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -619,6 +630,7 @@
     <MESSAGE value="organize namespaces &#10;move fib test into separate package" />
     <MESSAGE value="atom_performance.clj highly improved" />
     <MESSAGE value="add multimethods vs protocols" />
+    <MESSAGE value="improve multimethods vs protocols" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -678,30 +690,26 @@
         <state line="2" column="19" selection-start="52" selection-end="52" vertical-scroll-proportion="0.06840391" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clojure_learning/atom_performance.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="31" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/clojure-1.4.0/clojure-1.4.0.jar!/clojure/core.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3428" column="81" selection-start="107565" selection-end="107565" vertical-scroll-proportion="0.40707964">
-          <folding />
-        </state>
+        <state line="3428" column="81" selection-start="107565" selection-end="107565" vertical-scroll-proportion="0.40707964" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clojure_learning/atom_performance.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="31" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clojure_learning/util.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="10" selection-start="38" selection-end="38" vertical-scroll-proportion="0.07266436">
+        <state line="9" column="23" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clojure_learning/multimethods_vs_protocols.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="34" selection-start="988" selection-end="988" vertical-scroll-proportion="0.4913495">
+        <state line="43" column="32" selection-start="821" selection-end="821" vertical-scroll-proportion="0.52768165">
           <folding />
         </state>
       </provider>

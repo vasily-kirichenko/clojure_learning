@@ -15,35 +15,37 @@
   clojure.lang.IPersistentMap
   (p-total [m] (:price m)))
 
-;; multimethod that accesses the record as a map
+;; multimethod
 
-(defmulti m-map-total class)
-(defmethod m-map-total Order [order] (:price order))
-(defmethod m-map-total clojure.lang.IPersistentMap [m] (:price m))
+(defmulti m-total class)
 
-;; multimethod that accesses the record as a class
+(defmethod m-total Order
+  [order]
+  (:price order))
 
-(defmulti m-class-total class)
-(defmethod m-class-total Order [order] (.price order))
+(defmethod m-total clojure.lang.IPersistentMap
+  [m]
+  (:price m))
 
 ;; test
 
+(def n 50000000)
+
 (defn measure
-  [constructor type]
-  (let [orders (reduce conj (for [n (range 3000000)] (constructor n)) ())]
-    (prn (format "created %s %ss." (count orders) type))
+  [obj type]
+  (let [msg (format "Do %s iterations on an %s:" n type)
+        delim (apply str (repeat (count msg) "-"))]
+    (println delim)
+    (println msg)
+    (println delim))
 
-    (doseq [[f msg] [[:price "direct (map)"]
-                     [p-total "protocol"]
-                     [m-map-total "multimethod (map)"]
-                     [#(.price %) "direct (class)"]
-                     [m-class-total "multimethod (class)"]]]
-      (prn (format
-             "%s: %s msecs."
-             msg
-             (try
-               (tc (dorun (map f orders)))
-               (catch Exception ex (str ex))))))))
+  (doseq [[f msg] [[:price      "direct (map)     "]
+                   [p-total     "protocol         "]
+                   [m-total     "multimethod (map)"]]]
+    (println (format "%s : %s msecs." msg
+               (try
+                 (tc (dotimes [_ n] (f obj)))
+                 (catch Exception ex (str ex)))))))
 
-(measure #(Order. %) "order")
-(measure #(hash-map :price %) "map")
+(measure (Order. 10) "order")
+(measure {:price 10} "map")
